@@ -1,0 +1,190 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: hsl(0, 91%, 40%);
+    background-color: #a13232;
+    /* Dark charcoal background color */
+    color: #706f6f;
+    /* Light text color */
+}
+
+/* Navbar styles */
+nav {
+    background: #2c2c2c;
+    /* Dark gray background */
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #b3b3b3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    /* Smooth hover transition */
+}
+
+nav a:hover {
+    background-color: #a5a5a5;
+    /* Darker gray background on hover */
+    color: #ffffff;
+    /* White text color on hover */
+}
+
+/* Container for the two sections */
+.container {
+    display: flex;
+    height: 80vh;
+    justify-content: left;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+.skill-container{
+    display: flex;
+    padding-left: 0px;
+    padding-right:50px ;
+}
+
+.profile-image {
+    flex: 1;
+    padding-top: 50px;
+    margin-right: 20px;
+    /* text-align: center; */
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+/* .img-1 img{
+    width: 100px;
+    height: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+} */
+ /* About Me section */
+ .about-me {
+    padding-top:50px ;
+    flex: 2;
+}
+.education {
+    /* display: flex; */
+    height: 90vh;
+    justify-content: center;
+    width: 100%;
+    padding-left: 60px;
+    padding-top: 40px;
+    /* padding: 20px; */
+    margin: auto;
+}
+
+ /* About Me section */
+ 
+ .skills {
+    height: 90vh;
+    padding-left: 100px;
+    padding-top: 40px;
+    /* padding: 20px; */
+    margin: auto;
+ }
+
+ .footer {
+    height: 15vh;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background: #2c2c2c; /* Dark gray background color */
+}
+
+.footer a {
+    color: #61dafb; /* Light blue color for links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    color: #b3b3b3; /* Light text color for copyright notice */
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* Your responsive styles go here */
+    .container {
+        display: flex;
+        height: 110vh;
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+    }
+    .skill-container{
+        display: flex;
+        padding-left: 0px;
+        padding-right:50px ;
+    }
+    
+    .profile-image {
+        flex: 1;
+        padding-top: 50px;
+        margin-right: 20px;
+        /* text-align: center; */
+    }
+    
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    }
+    
+    /* .img-1 img{
+        width: 100px;
+        height: 10px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #fff;
+    } */
+     /* About Me section */
+     .about-me {
+        padding-top:50px ;
+        flex: 2;
+    }
+    .education {
+        /* display: flex; */
+        height: 60vh;
+        justify-content: center;
+        width: 100%;
+        padding-left: 60px;
+        padding-top: 40px;
+        /* padding: 20px; */
+        margin: auto;
+    }
+    
+     /* About Me section */
+     
+     .skills {
+        height: 60vh;
+        padding-left: 100px;
+        padding-top: 40px;
+        /* padding: 20px; */
+        margin: auto;
+     }
+   
+}
